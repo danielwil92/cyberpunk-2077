@@ -1,0 +1,57 @@
+@import '../../../scss/constant/colors';
+
+@font-face {
+  font-family: 'Blender Pro';
+  font-weight: 700;
+  src: url('../../../fonts/BlenderPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Blender Pro Book';
+  font-weight: 700;
+  src: url('../../../fonts/BlenderPro-Book.ttf');
+}
+
+$headline-font: 'Blender Pro';
+$headline-weight: 700;
+
+.cyberpunk-headline {
+  color: $grey-light-1;
+  font-family: $headline-font;
+  font-weight: $headline-weight;
+  text-transform: uppercase;
+
+  &--headline-one {
+    font-size: 120px;
+    line-height: 110px;
+  }
+
+  &--headline-two {
+    font-size: 80px;
+    line-height: 75px;
+  }
+
+  &--headline-three {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  &--headline-four {
+    font-size: 65px;
+    line-height: 60px;
+  }
+
+  &--headline-five {
+    font-size: 48px;
+    line-height: 40px;
+  }
+
+  &--headline-six {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  &--color-yellow {
+    color: $brand-primary;
+  }
+}

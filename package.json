@@ -4,6 +4,10 @@
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "0BSD",
+  "pre-commit": [
+    "lint:css",
+    "lint:js"
+  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -11,14 +15,41 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "lint:css": "npx stylelint 'src/**/*.scss' --syntax scss",
+    "lint:js": "npx eslint 'src/**/*.jsx' --color"
   },
   "dependencies": {
     "gatsby": "^2.23.12",
+    "gatsby-image": "^2.4.12",
+    "gatsby-plugin-sass": "^2.3.10",
+    "gatsby-plugin-sharp": "^2.6.17",
+    "gatsby-source-filesystem": "^2.3.18",
+    "gatsby-transformer-sharp": "^2.5.10",
+    "node-sass": "^4.14.1",
+    "pre-commit": "^1.2.2",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "gatsby-plugin-eslint": "^1.0.3",
+    "graphql": "^14.6.0",
+    "stylelint": "^9.10.1",
+    "stylelint-a11y": "^1.1.9",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
+    "stylelint-order": "^0.8.0",
+    "stylelint-scss": "^2.2.0",
+    "stylelint-webpack-plugin": "^0.10.1",
+    "stylelint-z-index-value-constraint": "^1.0.0",
     "prettier": "2.0.5"
   },
   "repository": {
