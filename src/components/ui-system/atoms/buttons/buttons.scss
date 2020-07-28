@@ -1,43 +1,19 @@
-@import '../../../../scss/constant/font-family';
 @import '../../../../scss/constant/colors';
-@import '../../../../scss/mixins/media-queries';
 
 .cyberpunk-button {
+  border: 1px solid $brand-primary;
+  color: $brand-primary;
   display: inline-block;
-  font-family: $headline-font;
+  filter: drop-shadow(0 4px 4px rgba($brand-primary, .4));
+  font-size: 14px;
+  letter-spacing: .5em;
+  line-height: 24px;
+  padding: 5px 10px;
   text-transform: uppercase;
-  $scope_: &;
 
-  &--primary {
+  &__border {
     border: 1px solid $brand-primary;
-    color: $brand-primary;
-    filter: drop-shadow(0 4px 4px rgba($brand-primary, .6));
-    font-size: 12px;
-    letter-spacing: 7px;
-    padding: 3px 5px;
-
-    #{$scope_}__border {
-      border: 1px solid $brand-primary;
-      display: inline-block;
-      padding: 10px 20px;
-    }
-
-    @include bp(lg) {
-      font-size: 14px;
-      letter-spacing: .5em;
-      padding: 5px 10px;
-
-      #{$scope_}__border {
-        padding: 15px 70px;
-      }
-    }
-  }
-
-  &--secondary {
-    background-color: $grey-light-1;
-    color: $grey-light-3;
-    font-weight: 700;
-    letter-spacing: 7px;
-    padding: 5px 20px;
+    display: inline-block;
+    padding: 15px 70px;
   }
 }

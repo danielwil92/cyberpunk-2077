@@ -1,9 +1,3 @@
-@import '../../../scss/mixins/media-queries';
-
 .cyberpunk-logo {
-  max-height: 40px;
-
-  @include bp(lg) {
-    max-height: 70px;
-  }
+  max-height: 70px;
 }

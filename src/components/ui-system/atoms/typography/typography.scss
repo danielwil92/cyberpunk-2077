@@ -1,20 +1,26 @@
 @import '../../../../scss/constant/colors';
-@import '../../../../scss/constant/font-family';
+
+@font-face {
+  font-family: 'Blender Pro';
+  font-weight: 700;
+  src: url('/fonts/BlenderPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Blender Pro Book';
+  font-weight: 700;
+  src: url('/fonts/BlenderPro-Book.ttf');
+}
+
+$headline-weight: 700;
 
 .cyberpunk-headline {
   color: $grey-light-1;
-  font-family: $headline-font;
-  -webkit-font-smoothing: antialiased;
   font-weight: $headline-weight;
-  hyphens: auto;
-  overflow-wrap: initial;
-  text-rendering: optimizeLegibility;
   text-transform: uppercase;
-  word-wrap: initial;
 
   &--headline-one {
     font-size: 120px;
-    letter-spacing: 7px;
     line-height: 110px;
   }
 

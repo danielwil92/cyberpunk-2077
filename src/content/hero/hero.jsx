@@ -1,10 +1,8 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import { useStaticQuery, graphql } from 'gatsby';
+import Heading from '../../components/ui-system/atoms/typography/typhography';
 import content from '../../data/content/hero.json';
-import Heading from '../../components/ui-system/atoms/typography/heading';
-import Text from '../../components/ui-system/atoms/typography/text';
-import Button from '../../components/ui-system/atoms/buttons/buttons';
 import './hero.scss';
 
 export default function Hero() {
@@ -25,18 +23,12 @@ export default function Hero() {
       <Img
         className="hero__image"
         fluid={data.file.childImageSharp.fluid}
-        alt="V character holding a futuristic gun"
+        alt="A corgi smiling happily"
       />
-      <div className="hero__tagline">
-        <h1 className="hero__main-headline">
-          <Heading text={content.headline.top} level="one" tag="span" />
-          <Heading className="mod-text-align-right" text={content.headline.bottom} level="one" color="yellow" tag="span" />
-        </h1>
-        <div className="mod-text-align-right">
-          <Text type="eyebrow" text={content.sub_headline} />
-          <Button className="mod-spacer-2" type="secondary" href={content.cta.link} label={content.cta.label} />
-        </div>
-      </div>
+      <h1 className="hero__main-headline">
+        <Heading text={content.headline.top} level="one" tag="span" />
+        <Heading className="mod-text-align-right" text={content.headline.bottom} level="one" color="yellow" tag="span" />
+      </h1>
     </section>
   );
 }
