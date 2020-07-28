@@ -1,8 +1,8 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
-import Heading from '../../ui-system/atoms/typhography';
-import content from '../../../data/content/hero.json';
+import Heading from '../../components/ui-system/atoms/typography/typhography';
+import content from '../../data/content/hero.json';
 import './hero.scss';
 
 export default function Hero() {
