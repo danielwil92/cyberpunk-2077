@@ -1,4 +1,5 @@
 @import 'constant/colors';
+@import 'constant/font-family';
 
 /* Document
    ========================================================================== */
@@ -23,6 +24,7 @@ html {
 body {
   background-color: $grey-dark-4;
   color: $grey-light-1;
+  font-family: $primary-font;
   margin: 0;
 }
 
@@ -81,6 +83,8 @@ pre {
 
 a {
   background-color: transparent;
+  color: $white;
+  text-decoration: none;
 }
 
 /**

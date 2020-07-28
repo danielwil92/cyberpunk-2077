@@ -1,0 +1,13 @@
+@import '../../../scss/constant/header';
+
+.cyberpunk-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 40px 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $cyberpunk-header-z-index;
+}
