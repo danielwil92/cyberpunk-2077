@@ -1,21 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './typography.component.scss';
+import './heading.scss';
 
-export default function Heading(props) {
-  const {
-    tag, level, color, className, text,
-  } = props;
+export default function Heading({
+  tag, level, color, className, text,
+}) {
   const CustomTag = tag;
   const headlineClassName = 'cyberpunk-headline';
   let cssClass = headlineClassName;
 
   if (level) {
-    cssClass += ` ${headlineClassName}--headline-${props.level}`;
+    cssClass += ` ${headlineClassName}--headline-${level}`;
   }
 
   if (color) {
-    cssClass += ` ${headlineClassName}--color-${props.color}`;
+    cssClass += ` ${headlineClassName}--color-${color}`;
   }
 
   if (className) {

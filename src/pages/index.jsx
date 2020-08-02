@@ -1,11 +1,15 @@
 import React from 'react';
 import '../scss/all.scss';
-import Hero from '../components/sections/hero/hero';
+import Header from '../components/common/header/header';
+import Hero from '../content/hero/hero';
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-    </main>
+    <div>
+      <Header />
+      <main>
+        <Hero />
+      </main>
+    </div>
   );
 }

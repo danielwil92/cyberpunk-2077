@@ -3,5 +3,9 @@
     "top": "The real you",
     "bottom": "Is not enough"
   },
-  "sub_headline": "Coming november 19th, 2020"
+  "sub_headline": "Coming november 19th, 2020",
+  "cta": {
+    "label": "Watch the E3 trailer",
+   "link": "https://www.youtube.com/watch?v=8X2kIfS6fb8"
+  }
 }
