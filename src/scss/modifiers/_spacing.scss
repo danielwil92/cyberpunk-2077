@@ -1,0 +1,7 @@
+@import '../constant/spacers';
+
+@each $spacer, $value in $spacers {
+  .mod-#{$spacer} {
+    margin-top: $value;
+  }
+}
