@@ -1,7 +1,10 @@
 @import '../../../../scss/constant/colors';
-
-$headline-weight: 700;
+@import '../../../../scss/constant/font-family';
 
 .cyberpunk-eyebrow {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
