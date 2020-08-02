@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './typography.scss';
+import './heading.scss';
 
 export default function Heading(props) {
   const {

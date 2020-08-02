@@ -1,0 +1,23 @@
+@import '../constant/breakpoints';
+
+@mixin bp($size) {
+  @if $size == 'sm' {
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: $sm-device) { @content; }
+  }
+
+  @if $size == 'md' {
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: $md-device) { @content; }
+  }
+
+  @if $size == 'lg' {
+    // Large devices (desktops, 992px and up)
+    @media (min-width: $lg-device) { @content; }
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @if $size == 'xl' {
+    @media (min-width: $xl-device) { @content; }
+  }
+}
