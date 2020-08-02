@@ -1,19 +1,29 @@
 @import '../../../../scss/constant/colors';
+@import '../../../../scss/mixins/media-queries';
 
 .cyberpunk-button {
   border: 1px solid $brand-primary;
   color: $brand-primary;
   display: inline-block;
-  filter: drop-shadow(0 4px 4px rgba($brand-primary, .4));
-  font-size: 14px;
-  letter-spacing: .5em;
-  line-height: 24px;
-  padding: 5px 10px;
+  filter: drop-shadow(0 4px 4px rgba($brand-primary, .6));
+  font-size: 12px;
+  letter-spacing: .4em;
+  padding: 3px 5px;
   text-transform: uppercase;
 
   &__border {
     border: 1px solid $brand-primary;
     display: inline-block;
-    padding: 15px 70px;
+    padding: 10px 20px;
+  }
+
+  @include bp(lg) {
+    font-size: 14px;
+    letter-spacing: .5em;
+    padding: 5px 10px;
+
+    &__border {
+      padding: 15px 70px;
+    }
   }
 }

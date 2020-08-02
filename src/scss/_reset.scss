@@ -1,6 +1,21 @@
 @import 'constant/colors';
 @import 'constant/font-family';
 
+/* Font-face
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Blender Pro';
+  font-weight: 700;
+  src: url('/fonts/BlenderPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Blender Pro Book';
+  font-weight: 700;
+  src: url('/fonts/BlenderPro-Book.ttf');
+}
+
 /* Document
    ========================================================================== */
 
