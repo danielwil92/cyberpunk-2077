@@ -6,6 +6,12 @@
   "sub_headline": "Coming november 19th, 2020",
   "cta": {
     "label": "Watch the E3 trailer",
-   "link": "https://www.youtube.com/watch?v=8X2kIfS6fb8"
-  }
+    "link": "https://www.youtube.com/watch?v=8X2kIfS6fb8"
+  },
+  "supported_platforms": [
+    "xbox-one",
+    "ps4",
+    "pc",
+    "stadia"
+  ]
 }
