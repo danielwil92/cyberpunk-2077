@@ -1,3 +1,6 @@
+@import '../../scss/constant/spacers';
+@import '../../scss/mixins/media-queries';
+
 .hero {
   margin-top: 70px;
   position: relative;
@@ -9,14 +12,64 @@
   }
 
   &__tagline {
-    left: 50%;
+    left: 0;
     position: absolute;
-    top: 470px;
-    transform: translateX(-50%);
+    top: 50%;
     width: 100%;
 
     span {
       display: block;
+    }
+  }
+
+  &__supported-platforms {
+    bottom: 10%;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__supported-platform {
+    height: 15px;
+    padding: 0 10px;
+  }
+
+  @include bp(sm-only) {
+    &__image {
+      height: calc(100vh - 64px);
+      width: 100%;
+    }
+
+    &__tagline,
+    .mod-text-align-right {
+      text-align: center;
+    }
+
+    .cyberpunk-eyebrow {
+      margin-top: map_get($spacers, 'spacer-1');
+    }
+  }
+
+  @include bp(md) {
+    &__supported-platform {
+      height: 25px;
+    }
+  }
+
+  @include bp(md-only) {
+    &__supported-platform {
+      padding: 0 35px;
+    }
+  }
+
+  @include bp(lg) {
+    &__tagline {
+      left: 50%;
+      top: 470px;
+      transform: translateX(-50%);
+    }
+
+    &__supported-platform {
+      padding: 0 50px;
     }
   }
 }

@@ -1,5 +1,6 @@
 @import '../../../../scss/constant/colors';
 @import '../../../../scss/constant/font-family';
+@import '../../../../scss/mixins/media-queries';
 
 .cyberpunk-headline {
   color: $grey-light-1;
@@ -13,9 +14,21 @@
   word-wrap: initial;
 
   &--headline-one {
-    font-size: 120px;
-    letter-spacing: 7px;
-    line-height: 110px;
+    font-size: 45px;
+    letter-spacing: 5px;
+    line-height: 40px;
+
+    @include bp(md-only) {
+      font-size: 100px;
+      letter-spacing: 7px;
+      line-height: 90px;
+    }
+
+    @include bp(lg) {
+      font-size: 120px;
+      letter-spacing: 7px;
+      line-height: 110px;
+    }
   }
 
   &--headline-two {
