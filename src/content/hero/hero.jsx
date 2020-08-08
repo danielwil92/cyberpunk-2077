@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero__supported-platforms mod-text-align-center">
-        {content.supported_platforms.forEach((icon) => <Icon key={icon} icon={icon} className="hero__supported-platform" />)}
+        {content.supported_platforms.map((icon) => <Icon key={icon} icon={icon} className="hero__supported-platform" />)}
       </div>
     </section>
   );
