@@ -1,4 +1,25 @@
+@import 'mixins/media-queries';
+
 .wrapper {
-  margin: 0 auto;
+  margin: 0 10px;
   max-width: 1320px;
+
+  &--full-bleed {
+    margin: 0 auto;
+    max-width: 1500px;
+  }
+
+  @include bp(sm-only) {
+    &--full-bleed-sm {
+      margin: 0 auto;
+    }
+  }
+
+  @include bp(md-only) {
+    margin: 0 30px;
+  }
+
+  @include bp(lg) {
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,10 @@
+@import '../../../../scss/constant/colors';
+
+.cyberpunk-icon {
+  display: inline-flex;
+  height: 32px;
+
+  &--color-white {
+    color: $white;
+  }
+}

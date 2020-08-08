@@ -173,6 +173,16 @@ img {
   border-style: none;
 }
 
+/**
+ * SVG
+ */
+svg {
+  display: inline-flex;
+  fill: currentColor;
+  height: inherit;
+  max-width: 100%;
+}
+
 /* Forms
    ========================================================================== */
 
