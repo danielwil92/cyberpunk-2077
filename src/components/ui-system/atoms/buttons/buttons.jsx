@@ -25,7 +25,7 @@ Button.propTypes = {
   className: PropTypes.string,
   label: PropTypes.string,
   href: PropTypes.string,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(['primary', 'secondary']),
 };
 
 Button.defaultProps = {

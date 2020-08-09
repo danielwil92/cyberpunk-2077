@@ -34,7 +34,11 @@
       margin-top: 0;
 
       .head-intro {
+        flex-basis: 33.3333%;
+        flex-grow: 1;
+        max-width: 33.3333%;
         padding: 0 20px;
+        width: 33.3333%;
       }
     }
   }

@@ -17,5 +17,9 @@
       "eyebrow": "Steal the implant that",
       "headline": "Grants\neternal life"
     }
-  ]
+  ],
+  "cta": {
+    "label": "Experience Night City",
+    "link": "https://www.youtube.com/watch?v=FknHjl7eQ6o"
+  }
 }

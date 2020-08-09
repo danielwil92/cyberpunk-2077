@@ -7,9 +7,10 @@ import Heading from '../../components/ui-system/atoms/typography/heading';
 import Text from '../../components/ui-system/atoms/typography/text';
 import './about.scss';
 import HeadIntro from '../../components/ui-system/molecules/head-intro/head-intro';
+import Button from '../../components/ui-system/atoms/buttons/buttons';
 
 export default function About({
-  headline, body, pillars,
+  headline, body, pillars, cta,
 }) {
   const data = useStaticQuery(graphql`
       query {
@@ -46,6 +47,9 @@ export default function About({
           />
         ))}
       </div>
+      <div className="mod-text-align-center mod-spacer-3">
+        <Button type="primary" href={cta.link} label={cta.label} />
+      </div>
     </div>
   );
 }
@@ -58,4 +62,8 @@ About.propTypes = {
     eyebrow: PropTypes.string,
     headline: PropTypes.string,
   })).isRequired,
+  cta: PropTypes.shape({
+    link: PropTypes.string,
+    label: PropTypes.string,
+  }).isRequired,
 };

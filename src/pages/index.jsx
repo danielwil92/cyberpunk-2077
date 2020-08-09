@@ -25,6 +25,7 @@ export default function Home() {
             headline={AboutContent.headline}
             body={AboutContent.body}
             pillars={AboutContent.pillars}
+            cta={AboutContent.cta}
           />
         </SectionWrapper>
       </main>
