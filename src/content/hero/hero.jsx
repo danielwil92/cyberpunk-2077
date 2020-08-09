@@ -1,14 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import content from '../../data/content/hero.json';
 import Heading from '../../components/ui-system/atoms/typography/heading';
 import Text from '../../components/ui-system/atoms/typography/text';
 import Button from '../../components/ui-system/atoms/buttons/buttons';
 import Icon from '../../components/ui-system/atoms/graphics/icon';
 import './hero.scss';
 
-export default function Hero() {
+export default function Hero({
+  headline, subheading, cta, supportedPlatforms,
+}) {
   const data = useStaticQuery(graphql`
       query {
           file(relativePath: { eq: "images/first-section-cover.png" }) {
@@ -22,7 +24,7 @@ export default function Hero() {
   `);
 
   return (
-    <section className="hero wrapper wrapper--full-bleed-sm">
+    <div className="hero">
       <Img
         className="hero__image"
         fluid={data.file.childImageSharp.fluid}
@@ -30,17 +32,37 @@ export default function Hero() {
       />
       <div className="hero__tagline">
         <h1 className="hero__main-headline">
-          <Heading text={content.headline.top} level="one" tag="span" />
-          <Heading className="mod-text-align-right" text={content.headline.bottom} level="one" color="yellow" tag="span" />
+          <Heading text={headline.top} level="one" tag="span" />
+          <Heading className="mod-text-align-right" text={headline.bottom} level="one" color="yellow" tag="span" />
         </h1>
         <div className="mod-text-align-right">
-          <Text type="eyebrow" text={content.sub_headline} />
-          <Button className="mod-spacer-2" type="secondary" href={content.cta.link} label={content.cta.label} />
+          <Text type="eyebrow" text={subheading} />
+          <Button className="mod-spacer-2" type="secondary" href={cta.link} label={cta.label} />
         </div>
       </div>
       <div className="hero__supported-platforms mod-text-align-center">
-        {content.supported_platforms.map((icon) => <Icon key={icon} icon={icon} className="hero__supported-platform" />)}
+        {supportedPlatforms.map((icon) => <Icon key={icon} icon={icon} className="hero__supported-platform" />)}
       </div>
-    </section>
+    </div>
   );
 }
+
+Hero.propTypes = {
+  headline: PropTypes.shape({
+    top: PropTypes.string,
+    bottom: PropTypes.string,
+  }),
+  subheading: PropTypes.string,
+  cta: PropTypes.shape({
+    link: PropTypes.string,
+    label: PropTypes.string,
+  }),
+  supportedPlatforms: PropTypes.arrayOf(PropTypes.string),
+};
+
+Hero.defaultProps = {
+  headline: { top: '', bottom: '' },
+  subheading: '',
+  cta: { label: '', link: '' },
+  supportedPlatforms: [''],
+};

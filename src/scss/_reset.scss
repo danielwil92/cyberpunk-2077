@@ -63,6 +63,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  white-space: pre-line;
 }
 
 /* Grouping content
@@ -136,6 +137,11 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
+
+p {
+  margin: 0;
+  white-space: pre-line;
+}
 
 small {
   font-size: 80%;

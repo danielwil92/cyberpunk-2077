@@ -1,0 +1,21 @@
+{
+  "headline": "An\naction-adventure story set in\nnight city",
+  "body": "In Cyberpunk 2077 you play as V, a mercenary outlaw going after a one-of-a-kind implant that is the key to immortality. You can customize your character’s cyberware, skillset and playstyle, and explore a vast city where the choices you make shape the story and the world around you.",
+  "pillars": [
+    {
+      "id": 1,
+      "eyebrow": "Live in the",
+      "headline": "City of the Future"
+    },
+    {
+      "id": 2,
+      "eyebrow": "Play as a",
+      "headline": "City of the Future"
+    },
+    {
+      "id": 3,
+      "eyebrow": "Steal the implant that",
+      "headline": "Grants eternal life"
+    }
+  ]
+}

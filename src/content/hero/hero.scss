@@ -12,13 +12,14 @@
   }
 
   &__tagline {
+    bottom: 20%;
     left: 0;
     position: absolute;
-    top: 50%;
     width: 100%;
 
     span {
       display: block;
+      white-space: nowrap;
     }
   }
 
