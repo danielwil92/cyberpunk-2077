@@ -12,7 +12,7 @@
     border: 1px solid $brand-primary;
     color: $brand-primary;
     filter: drop-shadow(0 4px 4px rgba($brand-primary, .6));
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 7px;
     padding: 3px 5px;
 
@@ -21,8 +21,18 @@
       display: inline-block;
       padding: 10px 20px;
     }
+  }
 
-    @include bp(lg) {
+  &--secondary {
+    background-color: $grey-light-1;
+    color: $grey-light-3;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 5px 20px;
+  }
+
+  @include bp(lg) {
+    &--primary {
       font-size: 14px;
       letter-spacing: .5em;
       padding: 5px 10px;
@@ -31,13 +41,9 @@
         padding: 15px 70px;
       }
     }
-  }
 
-  &--secondary {
-    background-color: $grey-light-1;
-    color: $grey-light-3;
-    font-weight: 700;
-    letter-spacing: 7px;
-    padding: 5px 20px;
+    &--secondary {
+      letter-spacing: 7px;
+    }
   }
 }

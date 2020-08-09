@@ -14,9 +14,9 @@
   word-wrap: initial;
 
   &--headline-one {
-    font-size: 45px;
+    font-size: 40px;
     letter-spacing: 5px;
-    line-height: 40px;
+    line-height: 35px;
 
     @include bp(md-only) {
       font-size: 100px;
