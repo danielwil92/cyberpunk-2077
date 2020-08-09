@@ -6,9 +6,10 @@ import HorizontalLine from '../../components/ui-system/misc/full-width/horizonta
 import Heading from '../../components/ui-system/atoms/typography/heading';
 import Text from '../../components/ui-system/atoms/typography/text';
 import './about.scss';
+import HeadIntro from '../../components/ui-system/molecules/head-intro/head-intro';
 
 export default function About({
-  headline, body,
+  headline, body, pillars,
 }) {
   const data = useStaticQuery(graphql`
       query {
@@ -25,26 +26,36 @@ export default function About({
   return (
     <div className="about">
       <Heading text={headline} level="one" tag="h2" className="mod-text-align-center" />
-      <Text text={body} className="about__text mod-text-align-center mod-spacer-2" />
-      <div className="about__line mod-spacer-4">
-        <HorizontalLine>
-          <Img
-            className="about__image"
-            fluid={data.file.childImageSharp.fluid}
-            alt="V character alongside a car smoking a cigarette"
+      <Text text={body} className="about__text mod-text-align-center mod-spacer-2 mod-align-container-center" />
+      <HorizontalLine spacer={4}>
+        <Img
+          className="about__image mod-align-container-center"
+          fluid={data.file.childImageSharp.fluid}
+          alt="V character alongside a car smoking a cigarette"
+        />
+      </HorizontalLine>
+      <div className="about__pillars mod-spacer-2">
+        {pillars.map((pillar) => (
+          <HeadIntro
+            key={pillar.id}
+            color="yellow"
+            isCentered
+            headingLevel={pillar.id === 2 ? 'four' : 'six'}
+            eyebrow={pillar.eyebrow}
+            headline={pillar.headline}
           />
-        </HorizontalLine>
+        ))}
       </div>
     </div>
   );
 }
 
 About.propTypes = {
-  headline: PropTypes.string,
-  body: PropTypes.string,
-};
-
-About.defaultProps = {
-  headline: '',
-  body: '',
+  headline: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
+  pillars: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
+    eyebrow: PropTypes.string,
+    headline: PropTypes.string,
+  })).isRequired,
 };

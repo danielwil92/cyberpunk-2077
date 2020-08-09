@@ -24,6 +24,7 @@ export default function Home() {
           <About
             headline={AboutContent.headline}
             body={AboutContent.body}
+            pillars={AboutContent.pillars}
           />
         </SectionWrapper>
       </main>

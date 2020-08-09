@@ -3,9 +3,47 @@
 
 .about {
   &__text {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 640px;
     width: 80%;
+  }
+
+  &__image {
+    max-width: 895px;
+    width: 90%;
+  }
+
+  &__pillars {
+    .head-intro {
+      margin-top: map_get($spacers, 'spacer-3');
+    }
+  }
+
+  @include bp(md-only) {
+    &__pillars {
+      .head-intro {
+        padding: 0 60px;
+      }
+    }
+  }
+
+  @include bp(md) {
+    &__pillars {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+
+      .head-intro {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  @include bp(lg) {
+    &__pillars {
+      .head-intro {
+        padding: 0 60px;
+      }
+    }
   }
 }

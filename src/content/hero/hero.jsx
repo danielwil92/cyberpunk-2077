@@ -36,7 +36,7 @@ export default function Hero({
           <Heading className="mod-text-align-right" text={headline.bottom} level="one" color="yellow" tag="span" />
         </h1>
         <div className="mod-text-align-right">
-          <Text type="eyebrow" text={subheading} />
+          <Text type="eyebrow" text={subheading} color="white" />
           <Button className="mod-spacer-2" type="secondary" href={cta.link} label={cta.label} />
         </div>
       </div>
