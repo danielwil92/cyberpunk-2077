@@ -6,6 +6,8 @@ import Hero from '../content/hero/hero';
 import HeroContent from '../data/content/home/hero.json';
 import About from '../content/about/about';
 import AboutContent from '../data/content/home/about.json';
+import NightCityWire from '../content/night-city-wire/night-city-wire';
+import NightCityWireContent from '../data/content/home/night-city-wire.json';
 
 export default function Home() {
   return (
@@ -26,6 +28,13 @@ export default function Home() {
             body={AboutContent.body}
             pillars={AboutContent.pillars}
             cta={AboutContent.cta}
+          />
+        </SectionWrapper>
+        <SectionWrapper fullBleed spacer={6}>
+          <NightCityWire
+            headIntro={NightCityWireContent.head_intro}
+            episode={NightCityWireContent.episode}
+            cta={NightCityWireContent.cta}
           />
         </SectionWrapper>
       </main>

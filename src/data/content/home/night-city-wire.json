@@ -1,0 +1,14 @@
+{
+  "head_intro": {
+    "eyebrow": "#NightCityWire",
+    "headline": "News from night city"
+  },
+  "episode": {
+    "number": "1st",
+    "link": "https://youtu.be/ToWfeUEAeeQ"
+  },
+  "cta": {
+    "label": "Be the first to know",
+    "link": "https://www.youtube.com/playlist?list=PL4dX1IHww9p2rPFDUi1BkpZDNNArtx3J1"
+  }
+}

@@ -1,25 +1,30 @@
 @import '../../../scss/mixins/media-queries';
 
 .wrapper {
-  margin: 0 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   max-width: 1320px;
 
   &--full-bleed {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1500px;
   }
 
   @include bp(sm-only) {
     &--full-bleed-sm {
-      margin: 0 auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   @include bp(md-only) {
-    margin: 0 30px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   @include bp(lg) {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

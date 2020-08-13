@@ -13,7 +13,7 @@ export default function Hero({
 }) {
   const data = useStaticQuery(graphql`
       query {
-          file(relativePath: { eq: "images/first-section-cover.png" }) {
+          file(relativePath: { eq: "first-section-cover.png" }) {
               childImageSharp {
                   fluid(maxWidth: 840, quality: 75) {
                       ...GatsbyImageSharpFluid

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './heading.scss';
 import Colors from '../../../../constants/colors';
+import HeadingDefaults from '../../../../constants/heading';
 
 export default function Heading({
   tag, level, color, className, text,
@@ -27,7 +28,7 @@ export default function Heading({
 
 Heading.propTypes = {
   color: PropTypes.oneOf(Colors),
-  level: PropTypes.oneOf(['one', 'two', 'three', 'four', 'five', 'six']),
+  level: PropTypes.oneOf(HeadingDefaults),
   tag: PropTypes.string,
   text: PropTypes.string,
   className: PropTypes.string,

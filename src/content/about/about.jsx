@@ -14,9 +14,9 @@ export default function About({
 }) {
   const data = useStaticQuery(graphql`
       query {
-          file(relativePath: { eq: "images/a-mercenary-on-the-rise.png" }) {
+          file(relativePath: { eq: "a-mercenary-on-the-rise.png" }) {
               childImageSharp {
-                  fluid(maxWidth: 840, quality: 75) {
+                  fluid(maxWidth: 895, quality: 75) {
                       ...GatsbyImageSharpFluid
                   }
               }
