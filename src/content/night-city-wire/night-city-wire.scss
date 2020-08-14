@@ -50,8 +50,10 @@ $night-city-wire--logo-size-sm: $night-city-wire--logo-size / 2;
   }
 
   @include bp(lg) {
-    height: $night-city-wire--logo-size;
-    margin-top: -#{$night-city-wire--logo-size / 2};
-    width: $night-city-wire--logo-size;
+    &__logo {
+      height: $night-city-wire--logo-size;
+      margin-top: -#{$night-city-wire--logo-size / 2};
+      width: $night-city-wire--logo-size;
+    }
   }
 }
