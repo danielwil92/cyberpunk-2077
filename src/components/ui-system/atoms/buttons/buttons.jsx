@@ -13,7 +13,7 @@ export default function Button({
   }
 
   return (
-    <a href={href} className={cssClass} target="_blank" rel="noreferrer">
+    <a href={href} className={cssClass} target="_blank" rel="noopener noreferrer">
       {primaryType
         ? <span className="cyberpunk-button__border">{label}</span>
         : label}

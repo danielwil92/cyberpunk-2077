@@ -1,6 +1,7 @@
 import React from 'react';
 import '../scss/all.scss';
 import Header from '../components/common/header/header';
+import Footer from '../components/common/footer/footer';
 import SectionWrapper from '../components/layout/wrapper/section-wrapper';
 import Hero from '../content/hero/hero';
 import HeroContent from '../data/content/home/hero.json';
@@ -38,6 +39,7 @@ export default function Home() {
           />
         </SectionWrapper>
       </main>
+      <Footer />
     </div>
   );
 }

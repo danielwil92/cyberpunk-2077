@@ -1,0 +1,44 @@
+@import '../../../scss/constant/all';
+@import '../../../scss/mixins/all';
+
+$footer-padding-bottom: map-get($spacers, 'spacer-5');
+
+.cyberpunk-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $footer-padding-bottom;
+  position: relative;
+
+  &__rating {
+    margin-top: map-get($spacers, 'spacer-3');
+  }
+
+  &__copyright {
+    color: $white;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 870px;
+    opacity: .3;
+    text-align: center;
+    width: 70%;
+  }
+
+  &__item {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+  }
+
+  @include bp(md) {
+    &__item {
+      padding: 10px 50px;
+    }
+
+    &__rating {
+      bottom: $footer-padding-bottom;
+      position: absolute;
+      right: 30px;
+    }
+  }
+}

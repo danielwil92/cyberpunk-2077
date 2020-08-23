@@ -101,6 +101,13 @@ a {
   background-color: transparent;
   color: $white;
   text-decoration: none;
+  transition: color .3s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $brand-primary;
+  }
 }
 
 /**
@@ -187,6 +194,7 @@ svg {
   fill: currentColor;
   height: inherit;
   max-width: 100%;
+  transition: fill .3s ease-in-out;
 }
 
 /* Forms

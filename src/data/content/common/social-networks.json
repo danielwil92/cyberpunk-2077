@@ -1,0 +1,36 @@
+{
+ "social": [
+  {
+    "name": "facebook",
+    "url":  "https://www.facebook.com/CyberpunkGame"
+  },
+  {
+   "name": "twitter",
+   "url":  "http://twitter.com/cyberpunkgame"
+  },
+  {
+   "name": "instagram",
+   "url":  "https://www.instagram.com/cyberpunkgame/"
+  },
+  {
+   "name": "twitch",
+   "url":  "https://www.twitch.tv/cdprojektred"
+  },
+  {
+   "name": "youtube",
+   "url":  "https://www.youtube.com/user/CyberPunkGame"
+  },
+  {
+    "name": "tumblr",
+    "url":  "https://cyberpunkgame.tumblr.com/"
+  },
+  {
+   "name": "cd-forums",
+   "url": "https://forums.cdprojektred.com/index.php?forums/cyberpunk.21/"
+  },
+  {
+   "name": "discord",
+   "url":  "https://discord.gg/cyberpunkgame"
+  }
+ ]
+}

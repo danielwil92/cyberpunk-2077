@@ -1,0 +1,28 @@
+@import '../../../scss/constant/all';
+@import '../../../scss/mixins/all';
+
+.social-networks {
+  &__items {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+  }
+
+  &__icon {
+    height: 15px !important;
+
+    &:hover,
+    &:focus,
+    &:active, {
+      svg {
+        fill: $brand-primary;
+      }
+    }
+  }
+
+  @include bp(md) {
+    &__icon {
+      height: 20px !important;
+    }
+  }
+}
