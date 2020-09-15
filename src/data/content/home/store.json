@@ -1,0 +1,36 @@
+{
+  "head_intro": {
+    "eyebrow": "Take A peak at",
+    "headline": "The Cyberpunk Store"
+  },
+  "items": [
+    {
+      "eyebrow": "PC Accessories",
+      "name": "GeForce RTX\n2080 Ti",
+      "cta": {
+        "label": "Buy Now",
+        "link": "https://www.google.com"
+      }
+    },
+    {
+      "eyebrow": "PC Accessories",
+      "name": "GeForce RTX\n2080 Ti",
+      "cta": {
+        "label": "Buy Now",
+        "link": "https://www.google.com"
+      }
+    },
+    {
+      "eyebrow": "PC Accessories",
+      "name": "GeForce RTX\n2080 Ti",
+      "cta": {
+        "label": "Buy Now",
+        "link": "https://www.google.com"
+      }
+    }
+  ],
+  "cta": {
+    "label": "Go to the store",
+    "link": "https://www.cyberpunk.net/en/pre-order"
+  }
+}

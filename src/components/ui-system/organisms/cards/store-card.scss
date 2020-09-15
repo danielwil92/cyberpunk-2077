@@ -1,0 +1,36 @@
+@import '../../../../scss/constant/all';
+
+.store-card {
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: transform .3s ease-in-out;
+
+  &::before {
+    background: linear-gradient(359.65deg, $grey-dark-4 .26%, rgba(14, 14, 14, 0) 105.67%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-20px);
+  }
+
+  &__image {
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__caption {
+    padding: 80% 24px 24px;
+    position: relative;
+    z-index: 3;
+  }
+}

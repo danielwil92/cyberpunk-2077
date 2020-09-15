@@ -9,6 +9,8 @@ import About from '../content/about/about';
 import AboutContent from '../data/content/home/about.json';
 import NightCityWire from '../content/night-city-wire/night-city-wire';
 import NightCityWireContent from '../data/content/home/night-city-wire.json';
+import Store from '../content/store/store';
+import StoreContent from '../data/content/home/store.json';
 
 export default function Home() {
   return (
@@ -36,6 +38,13 @@ export default function Home() {
             headIntro={NightCityWireContent.head_intro}
             episode={NightCityWireContent.episode}
             cta={NightCityWireContent.cta}
+          />
+        </SectionWrapper>
+        <SectionWrapper spacer={6}>
+          <Store
+            headIntro={StoreContent.head_intro}
+            items={StoreContent.items}
+            cta={StoreContent.cta}
           />
         </SectionWrapper>
       </main>

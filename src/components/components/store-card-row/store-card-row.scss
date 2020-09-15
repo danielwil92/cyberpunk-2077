@@ -1,0 +1,27 @@
+@import '../../../scss/constant/all';
+@import '../../../scss/mixins/all';
+
+.store-card-row {
+  position: relative;
+  z-index: 2;
+
+  @include bp(sm-only) {
+    padding: 0 20px;
+
+    &__item {
+      margin-top: map-get($spacers, 'spacer-4');
+    }
+  }
+
+  @include bp(md) {
+    display: flex;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    &__item {
+      flex-grow: 1;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
