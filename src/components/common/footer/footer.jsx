@@ -13,7 +13,7 @@ export default function Footer() {
       </div>
       <ul className="mod-text-align-center mod-spacer-3">
         {FooterContent.useful_links.map((link) => (
-          <li className="cyberpunk-footer__item">
+          <li key={link.id} className="cyberpunk-footer__item">
             <a href={link.url} target="_blank" rel="noopener noreferrer">{link.text}</a>
           </li>
         ))}

@@ -30,7 +30,7 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  color: '',
+  color: 'white',
   tag: 'p',
   type: 'body',
   text: '',

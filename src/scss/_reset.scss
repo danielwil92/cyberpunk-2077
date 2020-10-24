@@ -233,7 +233,16 @@ input { /* 1 */
 
 button,
 select { /* 1 */
+  appearance: none;
+  background-color: transparent;
+  border: 0;
   text-transform: none;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: 0;
+  }
 }
 
 /**

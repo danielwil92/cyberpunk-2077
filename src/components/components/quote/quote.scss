@@ -1,0 +1,55 @@
+@import '../../../scss/constant/all';
+@import '../../../scss/mixins/all';
+
+.quote {
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__item {
+    margin-top: map-get($spacers, 'spacer-3');
+  }
+
+  &__toggle {
+    opacity: .2;
+    transition: opacity .3s ease-in-out;
+
+    &--active {
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: .5;
+    }
+  }
+
+  @include bp(sm-only) {
+    &__row {
+      flex-direction: column;
+    }
+  }
+
+  @include bp(md) {
+    &__item {
+      margin-right: map-get($spacers, 'spacer-4');
+      margin-top: 0;
+    }
+  }
+
+  @include bp(lg) {
+    &__quote {
+      text-align: left;
+    }
+
+    &__row {
+      justify-content: flex-start;
+    }
+  }
+}

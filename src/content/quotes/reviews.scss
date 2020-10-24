@@ -1,0 +1,36 @@
+@import '../../scss/constant/spacers';
+@import '../../scss/mixins/media-queries';
+
+.reviews {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    flex-basis: 50%;
+    max-width: 410px;
+    width: 50%;
+  }
+
+  &__quotes {
+    margin-top: map_get($spacers, 'spacer-3');
+    width: 100%;
+  }
+
+  @include bp(lg) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 480px;
+
+    &__image {
+      flex-basis: 410px;
+      margin-top: 0;
+    }
+
+    &__quotes {
+      flex-basis: 60%;
+      margin-top: 0;
+      width: 60%;
+    }
+  }
+}

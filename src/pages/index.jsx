@@ -11,6 +11,8 @@ import NightCityWire from '../content/night-city-wire/night-city-wire';
 import NightCityWireContent from '../data/content/home/night-city-wire.json';
 import Store from '../content/store/store';
 import StoreContent from '../data/content/home/store.json';
+import Reviews from '../content/quotes/reviews';
+import QuoteContent from '../data/content/home/quotes.json';
 
 export default function Home() {
   return (
@@ -38,6 +40,11 @@ export default function Home() {
             headIntro={NightCityWireContent.head_intro}
             episode={NightCityWireContent.episode}
             cta={NightCityWireContent.cta}
+          />
+        </SectionWrapper>
+        <SectionWrapper spacer={6}>
+          <Reviews
+            quotes={QuoteContent.quotes}
           />
         </SectionWrapper>
         <SectionWrapper spacer={6}>

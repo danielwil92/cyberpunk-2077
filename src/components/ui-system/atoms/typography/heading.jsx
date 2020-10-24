@@ -35,7 +35,7 @@ Heading.propTypes = {
 };
 
 Heading.defaultProps = {
-  color: '',
+  color: 'white',
   tag: 'h2',
   level: 'two',
   text: '',

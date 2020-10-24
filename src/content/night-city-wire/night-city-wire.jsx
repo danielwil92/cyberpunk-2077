@@ -28,7 +28,7 @@ export default function NightCityWire({
       <HeadIntro
         color="white"
         isCentered
-        headingLevel="one"
+        headingLevel="three"
         eyebrowPosition="bottom"
         eyebrow={headIntro.eyebrow}
         headline={headIntro.headline}

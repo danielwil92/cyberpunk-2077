@@ -5,6 +5,7 @@
   },
   "items": [
     {
+      "id": 1,
       "eyebrow": "PC Accessories",
       "name": "GeForce RTX\n2080 Ti",
       "cta": {
@@ -13,6 +14,7 @@
       }
     },
     {
+      "id": 2,
       "eyebrow": "PC Accessories",
       "name": "GeForce RTX\n2080 Ti",
       "cta": {
@@ -21,6 +23,7 @@
       }
     },
     {
+      "id": 3,
       "eyebrow": "PC Accessories",
       "name": "GeForce RTX\n2080 Ti",
       "cta": {

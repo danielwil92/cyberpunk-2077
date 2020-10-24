@@ -9,7 +9,7 @@ export default function StoreCardRow({
   return (
     <div className="store-card-row">
       { items.map((item) => (
-        <div className="store-card-row__item">
+        <div key={item.id} className="store-card-row__item">
           <StoreCard
             eyebrow={item.eyebrow}
             headline={item.name}
