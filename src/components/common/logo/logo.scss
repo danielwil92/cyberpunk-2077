@@ -3,6 +3,10 @@
 .cyberpunk-logo {
   max-height: 40px;
 
+  &--small {
+    max-height: 30px;
+  }
+
   @include bp(lg) {
     max-height: 70px;
   }

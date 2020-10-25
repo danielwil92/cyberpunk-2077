@@ -20,7 +20,7 @@
   @include bp(lg) {
     flex-direction: row;
     justify-content: space-between;
-    min-height: 480px;
+    min-height: 500px;
 
     &__image {
       flex-basis: 410px;

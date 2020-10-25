@@ -2,7 +2,7 @@
 @import '../../scss/mixins/media-queries';
 
 $night-city-wire--logo-size: 300px;
-$night-city-wire--logo-size-sm: $night-city-wire--logo-size / 2;
+$night-city-wire--logo-size-sm: $night-city-wire--logo-size / 3;
 
 .night-city-wire {
   .head-intro__eyebrow {
@@ -34,6 +34,12 @@ $night-city-wire--logo-size-sm: $night-city-wire--logo-size / 2;
     transform: translate(-50%, -50%);
     transition: opacity .3s ease-in-out;
     z-index: 2;
+
+    @include bp(sm-only) {
+      svg {
+        height: 30px !important;
+      }
+    }
   }
 
   &__logo {

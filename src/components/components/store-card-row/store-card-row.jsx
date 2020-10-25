@@ -11,6 +11,7 @@ export default function StoreCardRow({
       { items.map((item) => (
         <div key={item.id} className="store-card-row__item">
           <StoreCard
+            image={item.image}
             eyebrow={item.eyebrow}
             headline={item.name}
             cta={item.cta}
@@ -23,6 +24,7 @@ export default function StoreCardRow({
 
 StoreCardRow.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape({
+    image: PropTypes.string,
     eyebrow: PropTypes.string,
     name: PropTypes.string,
     cta: PropTypes.shape({

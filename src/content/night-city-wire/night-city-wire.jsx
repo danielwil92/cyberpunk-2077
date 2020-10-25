@@ -45,7 +45,7 @@ export default function NightCityWire({
         />
       </a>
       <div className="night-city-wire__logo">
-        <img src="/night-city-wire-logo@2x.png" alt="NightCity Wire Logo" className="cyberpunk-logo" />
+        <img src="/night-city-wire-logo@2x.png" alt="NightCity Wire Logo" className="cyberpunk-logo cyberpunk-logo--small" />
       </div>
       <div className="mod-text-align-center mod-spacer-3">
         <Button type="primary" href={cta.link} label={cta.label} />

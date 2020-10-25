@@ -6,6 +6,7 @@
   "items": [
     {
       "id": 1,
+      "image": "geforce.png",
       "eyebrow": "PC Accessories",
       "name": "GeForce RTX\n2080 Ti",
       "cta": {
@@ -15,6 +16,7 @@
     },
     {
       "id": 2,
+      "image": "arthics.png",
       "eyebrow": "PC Accessories",
       "name": "GeForce RTX\n2080 Ti",
       "cta": {
@@ -24,6 +26,7 @@
     },
     {
       "id": 3,
+      "image": "xbox.png",
       "eyebrow": "PC Accessories",
       "name": "GeForce RTX\n2080 Ti",
       "cta": {

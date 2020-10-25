@@ -6,11 +6,11 @@ import Text from '../../atoms/typography/text';
 import Button from '../../atoms/buttons/buttons';
 
 export default function StoreCard({
-  headline, eyebrow, cta,
+  image, headline, eyebrow, cta,
 }) {
   return (
     <figure className="store-card">
-      <img src="/game-rating-notice.png" alt="Rating Mature" className="store-card__image" />
+      <img src={`/products/${image}`} alt="Rating Mature" className="store-card__image" />
       <figcaption className="store-card__caption">
         <Text text={eyebrow} type="eyebrow" />
         <Heading
@@ -33,4 +33,5 @@ StoreCard.propTypes = {
   }).isRequired,
   eyebrow: PropTypes.string.isRequired,
   headline: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };

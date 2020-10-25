@@ -32,18 +32,49 @@
   }
 
   &--headline-two {
-    font-size: 80px;
-    line-height: 75px;
+    font-size: 30px;
+    line-height: 25px;
+
+    @include bp(md-only) {
+      font-size: 60px;
+      line-height: 55px;
+    }
+
+    @include bp(lg) {
+      font-size: 80px;
+      line-height: 75px;
+    }
   }
 
   &--headline-three {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 20px;
+
+    @include bp(md-only) {
+      font-size: 45px;
+      line-height: 40px;
+    }
+
+    @include bp(lg) {
+      font-size: 70px;
+      line-height: 70px;
+    }
   }
 
   &--headline-four {
-    font-size: 65px;
-    line-height: 60px;
+    font-size: 32px;
+    line-height: 28px;
+
+    @include bp(md-only) {
+      font-size: 42px;
+      line-height: 38px;
+    }
+
+    @include bp(lg) {
+      font-size: 65px;
+      line-height: 60px;
+    }
   }
 
   &--headline-five {
@@ -52,9 +83,19 @@
   }
 
   &--headline-six {
-    font-size: 40px;
+    font-size: 20px;
     letter-spacing: 3px;
-    line-height: 45px;
+    line-height: 22px;
+
+    @include bp(md-only) {
+      font-size: 35px;
+      line-height: 30px;
+    }
+
+    @include bp(lg) {
+      font-size: 40px;
+      line-height: 45px;
+    }
   }
 
   &--color-yellow {
